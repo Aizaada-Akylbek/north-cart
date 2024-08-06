@@ -9,14 +9,14 @@ import Cart from "../../pages/Cart";
 
 const Layout = () => {
   return (
-    <div>
+    <div> 
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/detail" element={<Detail />} />
-        <Route path="/cart" element={<Cart />} />
+        {/* <Route path="/detail" element={<Detail />} />
+        <Route path="/cart" element={<Cart />} /> */}
       </Routes>
     </div>
   );
