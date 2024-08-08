@@ -15,8 +15,8 @@ const Layout = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/detail" element={<Detail />} />
-        <Route path="/cart" element={<Cart />} /> */}
+        <Route path="/deteil/:id" element={<Detail />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </div>
   );

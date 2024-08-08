@@ -1,0 +1,54 @@
+.home {
+    .new {
+        text-align: center;
+
+        h2 {
+            font-family: Arimo;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 48px;
+            text-align: center;
+        }
+
+        p {
+            font-family: Lato;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 48px;
+            text-align: center;
+            color: #555555;
+        }
+
+        .carts {
+            display: flex;
+            flex-wrap: wrap;
+
+            .cart {
+                width: 295px;
+                height: 412px;
+
+                img {
+                    width: 295px;
+                    height: 342px;
+                }
+
+                h4 {
+                    font-family: Baloo;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 25.18px;
+                    text-align: center;
+                }
+
+                p {
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.2px;
+                    text-align: center;
+                    color: #024E82;
+                }
+            }
+        }
+    }
+}
