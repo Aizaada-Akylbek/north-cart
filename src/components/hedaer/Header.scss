@@ -1,6 +1,36 @@
-.header{
+.header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    width: 1366px;
+    height: 111px;
+    padding-left: 65px;
+    padding-right: 63px;
+
+    .logo {
+        width: 156px;
+        height: 44px;
+        margin-right: 140px;
+    }
+
+    .text {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 564px;
+        width: 252px;
+
+        p {
+            font-family: Arimo;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 13.8px;
+            letter-spacing: 0.05em;
+            text-align: center;
+
+        }
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+    }
 }

@@ -8,14 +8,14 @@ import './Header.scss'
 const Header = () => {
   return <div className="header">
     <h2 className="logo">NorthStar</h2>
-    <div className="">
+    <div className="text">
       <NavLink to={'/'}><p>HOME</p></NavLink>
       <NavLink to={'/about'}><p>ABOUT</p></NavLink>
       <NavLink to={'/contact'}><p>CONTACT US</p></NavLink>
     </div>
     <div className="icons">
       <img src={userImg} alt="" />
-      <img src={shopImg} alt="" />
+      <NavLink to={'/cart'}><img src={shopImg} alt="" /></NavLink>
       <img src={menuImg} alt="" />
     </div>
   </div>;
