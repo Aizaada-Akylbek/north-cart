@@ -1,0 +1,70 @@
+.info {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 63px;
+    margin-right: 63px;
+    gap: 40px;
+    margin-bottom: 263px;
+
+    img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .text {
+        h2 {
+            font-family: Arimo;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 48px;
+            text-align: left;
+        }
+
+        h4 {
+            font-family: Lato;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28.8px;
+            color: #024E82;
+        }
+
+        p {
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.2px;
+            text-align: left;
+            width: 550px;
+            color: #555555;
+        }
+
+        button {
+            width: 165px;
+            height: 48px;
+            background: #024E82;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            color: #FFFFFF;
+            border: none;
+        }
+
+        h6 {
+            font-family: Lato;
+            font-size: 18px;
+            font-weight: 1000;
+            line-height: 24px;
+            text-align: left;
+            color: #555555;
+
+            span {
+                font-family: Lato;
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+                text-align: left;
+            }
+        }
+    }
+}

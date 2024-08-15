@@ -1,0 +1,18 @@
+.cart {
+    .hero {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        padding-left: 30%;
+    }
+
+    .products {
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+        }
+    }
+}

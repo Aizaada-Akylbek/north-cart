@@ -22,10 +22,15 @@
         .carts {
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 48px;
+            padding-left: 63px;
+            padding-right: 63px;
+            gap: 15px;
 
             .cart {
                 width: 295px;
-                height: 412px;
+                border: 2px solid black;
 
                 img {
                     width: 295px;
@@ -33,11 +38,13 @@
                 }
 
                 h4 {
-                    font-family: Baloo;
+                    font-family: sans-serif;
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 25.18px;
                     text-align: center;
+                    color: #1D1D1D;
+                    text-decoration: none;
                 }
 
                 p {
@@ -49,6 +56,118 @@
                     color: #024E82;
                 }
             }
+        }
+    }
+
+    .advantages {
+        display: flex;
+        gap: 82px;
+        margin-top: 70px;
+        margin-bottom: 107px;
+        padding-left: 73px;
+        padding-right: 100px;
+
+        .adva {
+            display: flex;
+            min-width: 233px;
+            height: 71px;
+
+            img {
+                width: 30px;
+                height: 28px;
+            }
+
+            .text {
+                margin-left: 22px;
+
+                h5 {
+                    font-family: system-ui;
+                    font-size: 16px;
+                    font-weight: 800;
+                    line-height: 25.18px;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                p {
+                    font-family: Lato;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.2px;
+                    color: #555555;
+                }
+            }
+        }
+    }
+
+    .discounts {
+        margin-left: 63px;
+        margin-right: 63px;
+        margin-bottom: 89px;
+        display: flex;
+        gap: 20px;
+
+        .box1 {
+            width: 715px;
+            height: 429px;
+        }
+
+        .box2 {
+            width: 505px;
+            height: 429px;
+        }
+
+        .box {
+            display: block;
+            text-align: center;
+            padding-top: 109px;
+            background: #000000;
+            color: white;
+
+            h3 {
+                font-family: Lato;
+                font-size: 32px;
+                font-weight: 400;
+                line-height: 48px;
+                text-align: center;
+            }
+
+            p {
+                font-family: Lato;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 23.4px;
+                text-align: center;
+                margin-bottom: 32px;
+            }
+
+            button {
+                width: 140px;
+                height: 48px;
+                font-family: Lato;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                color: #024E82;
+                box-shadow: 0px 6px 15px 0px #0000000A;
+            }
+        }
+    }
+
+    .top {
+        button {
+            width: 161px;
+            height: 58px;
+            opacity: 0px;
+            background: #024E82;
+            font-family: Lato;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #FFFFFF;
+            border: none;
+            margin-top: 70px;
+            margin-bottom: 110px;
         }
     }
 }

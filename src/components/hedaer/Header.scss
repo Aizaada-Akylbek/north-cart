@@ -18,6 +18,10 @@
         margin-right: 564px;
         width: 252px;
 
+        .NavLink {
+            text-decoration: none;
+        }
+
         p {
             font-family: Arimo;
             font-size: 12px;
@@ -28,9 +32,36 @@
 
         }
     }
-    .icons{
+
+    .icons {
         display: flex;
         align-items: center;
         gap: 25px;
+
+        .nav-link {
+            position: relative;
+
+            .per {
+                width: 21px;
+                height: 21px;
+                border-radius: 50px;
+                background: #024E82;
+                position: absolute;
+                top: -5px;
+                right: -8px;
+                font-family: sans-serif;
+                font-size: 15px;
+                font-weight: 700;
+                line-height: 12.57px;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .per:hover {
+                color: black;
+            }
+        }
     }
 }

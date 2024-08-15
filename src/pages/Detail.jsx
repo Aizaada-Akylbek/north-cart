@@ -1,14 +1,18 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
+import { AddToCart } from "../redux/slice/cartSlice";
+import './Detail.scss'
 
 const Detail = () => {
+  const dis = useDispatch()
   const [productDeteil, setProductDeteil] = useState([])
   const params = useParams()
   console.log(params.id);
   async function getDeteilProduct(id) {
     const { data } = await axios.get(`https://fakestoreapi.com/products/${id}`)
-    setProductDeteil([data])
+    setProductDeteil(data)
   }
 
   useEffect(() => {
@@ -22,18 +26,16 @@ const Detail = () => {
 
   return (
     <div className="deteil">
-      {productDeteil.map((el) => (
-        <div key={el.id} className="info">
-<img src={el.image} alt="" />
-<div className="text">
-  <h2>{el.title}</h2>
-  <h4>{el.price}</h4>
-  <p>{el.description}</p>
-  <button>add to cart</button>
-  <h6>Category: {el.category}</h6>
-</div>
+        <div key={productDeteil.id} className="info">
+          <img src={productDeteil.image} alt="" />
+          <div className="text">
+            <h2>{productDeteil.title}</h2>
+            <h4>${productDeteil.price}</h4>
+            <p>{productDeteil.description}</p>
+            <button onClick={()=>dis(AddToCart(productDeteil))}>ADD TO CART</button>
+            <h6>Category: <span>{productDeteil.category}</span> </h6>
+          </div>
         </div>
-      ))}
     </div>);
 };
 
